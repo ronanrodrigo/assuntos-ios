@@ -1,4 +1,4 @@
 language: swift
-
+sudo: required
 script:
 - xcodebuild -workspace Assuntos.xcworkspace -scheme "AssuntosTestsCore" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' test
