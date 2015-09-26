@@ -10,7 +10,7 @@ import UIKit
 
 class SubjectTableViewController: UITableViewController {
     var subjects: [Subject] = []
-    let gateway = SubjectGatewayFake()
+    let gateway = SubjectGateway()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,18 @@ class SubjectTableViewController: UITableViewController {
         cell.textLabel?.text = subjects[indexPath.row].title
 
         return cell
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "openSuggestion") {
+            let destinationViewController = segue.destinationViewController as! SuggestionTableViewController
+            let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell)
+            let subject = self.subjects[(indexPath?.row)!]
+            let suggestion = GetRandomSuggestionBySubjectUsecase(gateway: self.gateway).run(subject)
+            destinationViewController.suggestion = suggestion
+        }
     }
 
 }

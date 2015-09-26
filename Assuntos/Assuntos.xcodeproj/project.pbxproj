@@ -16,11 +16,11 @@
 		3447699F1BB6615A003E3760 /* SubjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447699E1BB6615A003E3760 /* SubjectTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769AE1BB66CD9003E3760 /* SubjectGatewayFake.swift */; settings = {ASSET_TAGS = (); }; };
 		344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */; settings = {ASSET_TAGS = (); }; };
-		344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B21BB66E27003E3760 /* SubjectGateway.swift */; settings = {ASSET_TAGS = (); }; };
+		344769B31BB66E27003E3760 /* GatewaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B21BB66E27003E3760 /* GatewaySubject.swift */; settings = {ASSET_TAGS = (); }; };
 		344769B71BB67094003E3760 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B61BB67094003E3760 /* Subject.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB051BB6F8C6004660CD /* SuggestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB041BB6F8C6004660CD /* SuggestionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB071BB6F8F2004660CD /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB061BB6F8F2004660CD /* Suggestion.swift */; settings = {ASSET_TAGS = (); }; };
-		3448CB0B1BB6FBCD004660CD /* SuggestionGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0A1BB6FBCD004660CD /* SuggestionGateway.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB0B1BB6FBCD004660CD /* GatewaySuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0A1BB6FBCD004660CD /* GatewaySuggestion.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB0D1BB6FCCE004660CD /* SuggestionGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0C1BB6FCCE004660CD /* SuggestionGatewayFake.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB0F1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB131BB7038A004660CD /* GetRandomSuggestionUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +28,11 @@
 		3448CB2D1BB70DD7004660CD /* AddSuggestionToSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB291BB70DD7004660CD /* AddSuggestionToSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB2E1BB70DD7004660CD /* GetRandomSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB2A1BB70DD7004660CD /* GetRandomSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB2F1BB70DD7004660CD /* GetSubjectsListUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB2B1BB70DD7004660CD /* GetSubjectsListUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB361BB72F05004660CD /* SubjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB341BB72F05004660CD /* SubjectGateway.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB371BB72F05004660CD /* SuggestionGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB351BB72F05004660CD /* SuggestionGateway.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB391BB73938004660CD /* GetRandomSuggestionBySubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB381BB73938004660CD /* GetRandomSuggestionBySubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB3B1BB7397B004660CD /* GetRandomSuggestionBySubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB3A1BB7397B004660CD /* GetRandomSuggestionBySubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB3E1BB73D61004660CD /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB3D1BB73D61004660CD /* ArrayExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -73,11 +78,11 @@
 		3447699E1BB6615A003E3760 /* SubjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableViewController.swift; sourceTree = "<group>"; };
 		344769AE1BB66CD9003E3760 /* SubjectGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGatewayFake.swift; sourceTree = "<group>"; };
 		344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjecstListUsecase.swift; sourceTree = "<group>"; };
-		344769B21BB66E27003E3760 /* SubjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGateway.swift; sourceTree = "<group>"; };
+		344769B21BB66E27003E3760 /* GatewaySubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GatewaySubject.swift; sourceTree = "<group>"; };
 		344769B61BB67094003E3760 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		3448CB041BB6F8C6004660CD /* SuggestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewController.swift; sourceTree = "<group>"; };
 		3448CB061BB6F8F2004660CD /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
-		3448CB0A1BB6FBCD004660CD /* SuggestionGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionGateway.swift; sourceTree = "<group>"; };
+		3448CB0A1BB6FBCD004660CD /* GatewaySuggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GatewaySuggestion.swift; sourceTree = "<group>"; };
 		3448CB0C1BB6FCCE004660CD /* SuggestionGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionGatewayFake.swift; sourceTree = "<group>"; };
 		3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSuggestionToSubjectUsecase.swift; sourceTree = "<group>"; };
 		3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSuggestionUsecase.swift; sourceTree = "<group>"; };
@@ -87,6 +92,11 @@
 		3448CB291BB70DD7004660CD /* AddSuggestionToSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSuggestionToSubjectUsecaseTest.swift; sourceTree = "<group>"; };
 		3448CB2A1BB70DD7004660CD /* GetRandomSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSubjectUsecaseTest.swift; sourceTree = "<group>"; };
 		3448CB2B1BB70DD7004660CD /* GetSubjectsListUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjectsListUsecaseTest.swift; sourceTree = "<group>"; };
+		3448CB341BB72F05004660CD /* SubjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGateway.swift; sourceTree = "<group>"; };
+		3448CB351BB72F05004660CD /* SuggestionGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionGateway.swift; sourceTree = "<group>"; };
+		3448CB381BB73938004660CD /* GetRandomSuggestionBySubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSuggestionBySubjectUsecaseTest.swift; sourceTree = "<group>"; };
+		3448CB3A1BB7397B004660CD /* GetRandomSuggestionBySubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSuggestionBySubjectUsecase.swift; sourceTree = "<group>"; };
+		3448CB3D1BB73D61004660CD /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +158,7 @@
 		344769671BB654C0003E3760 /* Assuntos */ = {
 			isa = PBXGroup;
 			children = (
+				3448CB3C1BB73D32004660CD /* Extensions */,
 				344769B51BB67051003E3760 /* Models */,
 				344769991BB6587D003E3760 /* Core */,
 				344769A21BB66200003E3760 /* Gateways */,
@@ -222,6 +233,7 @@
 				34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */,
 				3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */,
 				3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */,
+				3448CB3A1BB7397B004660CD /* GetRandomSuggestionBySubjectUsecase.swift */,
 			);
 			name = Usecases;
 			path = Assuntos/Core/Usecases;
@@ -230,8 +242,8 @@
 		344769A11BB661E5003E3760 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				344769B21BB66E27003E3760 /* SubjectGateway.swift */,
-				3448CB0A1BB6FBCD004660CD /* SuggestionGateway.swift */,
+				344769B21BB66E27003E3760 /* GatewaySubject.swift */,
+				3448CB0A1BB6FBCD004660CD /* GatewaySuggestion.swift */,
 			);
 			name = Protocols;
 			path = Assuntos/Core/Protocols;
@@ -240,9 +252,11 @@
 		344769A21BB66200003E3760 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				3448CB341BB72F05004660CD /* SubjectGateway.swift */,
+				3448CB351BB72F05004660CD /* SuggestionGateway.swift */,
 			);
 			name = Gateways;
-			path = Assuntos/Core/Gateways;
+			path = Assuntos/Gateways;
 			sourceTree = SOURCE_ROOT;
 		};
 		344769AB1BB66B63003E3760 /* Doubles */ = {
@@ -281,9 +295,19 @@
 				3448CB291BB70DD7004660CD /* AddSuggestionToSubjectUsecaseTest.swift */,
 				3448CB2A1BB70DD7004660CD /* GetRandomSubjectUsecaseTest.swift */,
 				3448CB2B1BB70DD7004660CD /* GetSubjectsListUsecaseTest.swift */,
+				3448CB381BB73938004660CD /* GetRandomSuggestionBySubjectUsecaseTest.swift */,
 			);
 			name = Usecases;
 			path = AssuntosTestsCore/Usecases;
+			sourceTree = SOURCE_ROOT;
+		};
+		3448CB3C1BB73D32004660CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3448CB3D1BB73D61004660CD /* ArrayExtension.swift */,
+			);
+			name = Extensions;
+			path = Assuntos/Extensions;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -446,10 +470,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3447699F1BB6615A003E3760 /* SubjectTableViewController.swift in Sources */,
+				3448CB3E1BB73D61004660CD /* ArrayExtension.swift in Sources */,
+				3448CB3B1BB7397B004660CD /* GetRandomSuggestionBySubjectUsecase.swift in Sources */,
 				344769691BB654C0003E3760 /* AppDelegate.swift in Sources */,
-				344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */,
+				3448CB361BB72F05004660CD /* SubjectGateway.swift in Sources */,
+				3448CB371BB72F05004660CD /* SuggestionGateway.swift in Sources */,
+				344769B31BB66E27003E3760 /* GatewaySubject.swift in Sources */,
 				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
-				3448CB0B1BB6FBCD004660CD /* SuggestionGateway.swift in Sources */,
+				3448CB0B1BB6FBCD004660CD /* GatewaySuggestion.swift in Sources */,
 				34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */,
 				3448CB131BB7038A004660CD /* GetRandomSuggestionUsecase.swift in Sources */,
 				3448CB071BB6F8F2004660CD /* Suggestion.swift in Sources */,
@@ -485,6 +513,7 @@
 				3448CB2E1BB70DD7004660CD /* GetRandomSubjectUsecaseTest.swift in Sources */,
 				3448CB2F1BB70DD7004660CD /* GetSubjectsListUsecaseTest.swift in Sources */,
 				3448CB2D1BB70DD7004660CD /* AddSuggestionToSubjectUsecaseTest.swift in Sources */,
+				3448CB391BB73938004660CD /* GetRandomSuggestionBySubjectUsecaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

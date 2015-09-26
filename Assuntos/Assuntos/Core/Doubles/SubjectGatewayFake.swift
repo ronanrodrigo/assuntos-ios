@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SubjectGatewayFake: SubjectGateway {
+class SubjectGatewayFake: GatewaySubject {
     var subjects: [Subject]
     var subject: Subject
 
@@ -25,5 +25,9 @@ class SubjectGatewayFake: SubjectGateway {
     
     func getSubjects() -> [Subject] {
         return subjects
+    }
+    
+    func getRandomSuggestion(subject: Subject) -> Suggestion {
+        return subject.suggestions!.sample()
     }
 }

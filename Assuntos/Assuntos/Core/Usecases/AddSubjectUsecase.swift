@@ -7,9 +7,9 @@
 //
 
 class AddSubjectUsecase {
-    var gateway: SubjectGateway
+    var gateway: GatewaySubject
     
-    init(gateway: SubjectGateway) {
+    init(gateway: GatewaySubject) {
         self.gateway = gateway
     }
     

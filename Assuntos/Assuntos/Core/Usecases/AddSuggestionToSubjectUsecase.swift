@@ -7,9 +7,9 @@
 //
 
 class AddSuggestionToSubjectUsecase {
-    var gateway: SuggestionGateway
+    var gateway: GatewaySuggestion
     
-    init(gateway: SuggestionGateway) {
+    init(gateway: GatewaySuggestion) {
         self.gateway = gateway
     }
     

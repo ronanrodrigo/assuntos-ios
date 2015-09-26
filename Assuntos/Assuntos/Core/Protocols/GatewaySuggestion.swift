@@ -6,7 +6,7 @@
 //  Copyright © 2015 Ronan Rodrigo Nunes. All rights reserved.
 //
 
-protocol SuggestionGateway {
+protocol GatewaySuggestion {
     var suggestion: Suggestion {get set}
     
     func addSuggestion(suggestion: Suggestion, subject: Subject) -> Suggestion

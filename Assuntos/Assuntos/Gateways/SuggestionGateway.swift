@@ -6,7 +6,7 @@
 //  Copyright © 2015 Ronan Rodrigo Nunes. All rights reserved.
 //
 
-class SuggestionGatewayFake: GatewaySuggestion {
+class SuggestionGateway: GatewaySuggestion {
     var suggestions: [Suggestion]
     var suggestion: Suggestion
     
@@ -19,7 +19,6 @@ class SuggestionGatewayFake: GatewaySuggestion {
         self.suggestion = suggestion
         self.suggestion.subject = subject
         self.suggestions.append(suggestion)
-        subject.suggestions = self.suggestions
         return suggestion
     }
     
