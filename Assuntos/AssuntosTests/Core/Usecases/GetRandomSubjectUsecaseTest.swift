@@ -31,6 +31,6 @@ class GetRandomSuggestionUsecaseTest: XCTestCase {
         
         let suggestion = self.usecase.run()
         
-        XCTAssertEqual(suggestion.title, firstSuggestion.title, "Not the same sugestion")
+        XCTAssertEqual(suggestion.title, firstSuggestion.title, "Not equal sugestion")
     }
 }
