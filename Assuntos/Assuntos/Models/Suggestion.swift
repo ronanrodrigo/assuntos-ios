@@ -9,6 +9,9 @@
 class Suggestion {
     var title: String?
     var description: String?
+    var subject: Subject?
+    
+    init() { }
     
     init(title: String, description: String) {
         self.title = title

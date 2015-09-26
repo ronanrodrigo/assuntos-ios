@@ -17,9 +17,10 @@ class SubjectGatewayFake: SubjectGateway {
         self.subject = Subject()
     }
     
-    func addSubject(subject: Subject) {
+    func addSubject(subject: Subject) -> Subject {
         self.subject = subject
         self.subjects.append(self.subject)
+        return self.subject
     }
     
     func getSubjects() -> [Subject] {

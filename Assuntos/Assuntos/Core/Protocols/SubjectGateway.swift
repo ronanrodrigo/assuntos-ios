@@ -6,12 +6,10 @@
 //  Copyright © 2015 Ronan Rodrigo Nunes. All rights reserved.
 //
 
-import Foundation
-
 protocol SubjectGateway {
     var subject : Subject {get set}
     
-    func addSubject(subject: Subject)
+    func addSubject(subject: Subject) -> Subject
     
     func getSubjects() -> [Subject]
 }
