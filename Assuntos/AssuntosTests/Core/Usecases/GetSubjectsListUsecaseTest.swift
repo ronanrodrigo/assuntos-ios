@@ -26,4 +26,14 @@ class GetSubjectsListUsecaseTest: XCTestCase {
         
         XCTAssertEqual(subjects[0].title, subject.title)
     }
+    
+    func testShouldGetTwoCreatedSubjecstInSubjectList(){
+        let subject = Subject(title: "Assunto aleatorio")
+        self.gateway.addSubject(subject)
+        self.gateway.addSubject(subject)
+        
+        let subjects = self.usecase.run()
+        
+        XCTAssertEqual(subjects.count, 2)
+    }
 }
