@@ -9,11 +9,10 @@
 import UIKit
 
 class SubjectTableViewController: UITableViewController {
-    var subjects: [Subject]!
+    var subjects: [Subject] = []
     let gateway = SubjectGatewayFake()
 
     override func viewDidLoad() {
-        subjects = GetSubjecstListUsecase(gateway: gateway).run()
         super.viewDidLoad()
     }
     
