@@ -7,15 +7,22 @@
 //
 
 class SuggestionGatewayFake: SuggestionGateway {
+    var suggestions: [Suggestion]
     var suggestion: Suggestion
     
     init () {
+        self.suggestions = []
         self.suggestion = Suggestion()
     }
     
     func addSuggestion(suggestion: Suggestion, subject: Subject) -> Suggestion {
         self.suggestion = suggestion
         self.suggestion.subject = subject
+        self.suggestions.append(suggestion)
         return suggestion
+    }
+    
+    func getRandomSuggestion() -> Suggestion {
+        return self.suggestions.first!
     }
 }

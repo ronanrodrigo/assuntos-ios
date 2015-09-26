@@ -25,6 +25,8 @@
 		3448CB0B1BB6FBCD004660CD /* SuggestionGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0A1BB6FBCD004660CD /* SuggestionGateway.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB0D1BB6FCCE004660CD /* SuggestionGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0C1BB6FCCE004660CD /* SuggestionGatewayFake.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB0F1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB111BB7037E004660CD /* GetRandomSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB101BB7037E004660CD /* GetRandomSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB131BB7038A004660CD /* GetRandomSuggestionUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		3448CB0A1BB6FBCD004660CD /* SuggestionGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionGateway.swift; sourceTree = "<group>"; };
 		3448CB0C1BB6FCCE004660CD /* SuggestionGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionGatewayFake.swift; sourceTree = "<group>"; };
 		3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSuggestionToSubjectUsecase.swift; sourceTree = "<group>"; };
+		3448CB101BB7037E004660CD /* GetRandomSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSubjectUsecaseTest.swift; sourceTree = "<group>"; };
+		3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSuggestionUsecase.swift; sourceTree = "<group>"; };
 		34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecaseTest.swift; sourceTree = "<group>"; };
 		34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +204,7 @@
 				344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */,
 				34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */,
 				3448CB0E1BB6FF02004660CD /* AddSuggestionToSubjectUsecase.swift */,
+				3448CB121BB7038A004660CD /* GetRandomSuggestionUsecase.swift */,
 			);
 			name = Usecases;
 			path = Assuntos/Core/Usecases;
@@ -238,6 +243,7 @@
 				344769AC1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift */,
 				34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */,
 				3448CB081BB6F9B6004660CD /* AddSuggestionToSubjectUsecaseTest.swift */,
+				3448CB101BB7037E004660CD /* GetRandomSubjectUsecaseTest.swift */,
 			);
 			name = Usecases;
 			path = AssuntosTests/Core/Usecases;
@@ -398,6 +404,7 @@
 				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
 				3448CB0B1BB6FBCD004660CD /* SuggestionGateway.swift in Sources */,
 				34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */,
+				3448CB131BB7038A004660CD /* GetRandomSuggestionUsecase.swift in Sources */,
 				3448CB071BB6F8F2004660CD /* Suggestion.swift in Sources */,
 				3448CB0D1BB6FCCE004660CD /* SuggestionGatewayFake.swift in Sources */,
 				3448CB051BB6F8C6004660CD /* SuggestionTableViewController.swift in Sources */,
@@ -411,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3448CB111BB7037E004660CD /* GetRandomSubjectUsecaseTest.swift in Sources */,
 				34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */,
 				344769AD1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift in Sources */,
 				3447697E1BB654C0003E3760 /* AssuntosTests.swift in Sources */,

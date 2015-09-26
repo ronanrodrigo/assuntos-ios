@@ -10,4 +10,6 @@ protocol SuggestionGateway {
     var suggestion: Suggestion {get set}
     
     func addSuggestion(suggestion: Suggestion, subject: Subject) -> Suggestion
+    
+    func getRandomSuggestion() -> Suggestion
 }
