@@ -50,6 +50,16 @@
                </Test>
             </SkippedTests>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3448CB191BB70D6C004660CD"
+               BuildableName = "AssuntosTestsCore.xctest"
+               BlueprintName = "AssuntosTestsCore"
+               ReferencedContainer = "container:Assuntos.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
