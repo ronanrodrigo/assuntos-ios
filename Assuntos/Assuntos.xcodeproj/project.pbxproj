@@ -98,9 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				344769991BB6587D003E3760 /* Core */,
-				344769981BB65877003E3760 /* Controllers */,
+				344769981BB65877003E3760 /* ViewControllers */,
 				344769681BB654C0003E3760 /* AppDelegate.swift */,
-				3447696A1BB654C0003E3760 /* ViewController.swift */,
 				3447696C1BB654C0003E3760 /* Main.storyboard */,
 				3447696F1BB654C0003E3760 /* Assets.xcassets */,
 				344769711BB654C0003E3760 /* LaunchScreen.storyboard */,
@@ -127,12 +126,13 @@
 			path = AssuntosUITests;
 			sourceTree = "<group>";
 		};
-		344769981BB65877003E3760 /* Controllers */ = {
+		344769981BB65877003E3760 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3447696A1BB654C0003E3760 /* ViewController.swift */,
 			);
-			name = Controllers;
-			path = Assuntos/Controllers;
+			name = ViewControllers;
+			path = Assuntos/ViewControllers;
 			sourceTree = SOURCE_ROOT;
 		};
 		344769991BB6587D003E3760 /* Core */ = {
