@@ -9,6 +9,8 @@
 import Foundation
 
 protocol SubjectGateway {
+    var subject : Subject? {get set}
+    
     func addSubject(subject: Subject)
     
     func getSubjects() -> [Subject]

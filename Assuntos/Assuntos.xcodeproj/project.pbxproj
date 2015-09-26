@@ -19,6 +19,8 @@
 		344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 		344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B21BB66E27003E3760 /* SubjectGateway.swift */; settings = {ASSET_TAGS = (); }; };
 		344769B71BB67094003E3760 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B61BB67094003E3760 /* Subject.swift */; settings = {ASSET_TAGS = (); }; };
+		34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjecstListUsecase.swift; sourceTree = "<group>"; };
 		344769B21BB66E27003E3760 /* SubjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGateway.swift; sourceTree = "<group>"; };
 		344769B61BB67094003E3760 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecaseTest.swift; sourceTree = "<group>"; };
+		34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */,
+				34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */,
 			);
 			name = Usecases;
 			path = Assuntos/Core/Usecases;
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				344769AC1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift */,
+				34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */,
 			);
 			name = Usecases;
 			path = AssuntosTests/Core/Usecases;
@@ -372,6 +378,7 @@
 				344769691BB654C0003E3760 /* AppDelegate.swift in Sources */,
 				344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */,
 				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
+				34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */,
 				344769B71BB67094003E3760 /* Subject.swift in Sources */,
 				344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */,
 			);
@@ -381,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */,
 				344769AD1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift in Sources */,
 				3447697E1BB654C0003E3760 /* AssuntosTests.swift in Sources */,
 			);
