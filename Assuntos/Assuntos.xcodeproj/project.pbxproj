@@ -99,11 +99,9 @@
 			children = (
 				344769991BB6587D003E3760 /* Core */,
 				344769981BB65877003E3760 /* ViewControllers */,
+				3447699B1BB659EC003E3760 /* Views */,
+				3447699A1BB65999003E3760 /* SupportingFiles */,
 				344769681BB654C0003E3760 /* AppDelegate.swift */,
-				3447696C1BB654C0003E3760 /* Main.storyboard */,
-				3447696F1BB654C0003E3760 /* Assets.xcassets */,
-				344769711BB654C0003E3760 /* LaunchScreen.storyboard */,
-				344769741BB654C0003E3760 /* Info.plist */,
 			);
 			path = Assuntos;
 			sourceTree = "<group>";
@@ -142,6 +140,24 @@
 			name = Core;
 			path = Assuntos/Core;
 			sourceTree = SOURCE_ROOT;
+		};
+		3447699A1BB65999003E3760 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3447696F1BB654C0003E3760 /* Assets.xcassets */,
+				344769741BB654C0003E3760 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3447699B1BB659EC003E3760 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3447696C1BB654C0003E3760 /* Main.storyboard */,
+				344769711BB654C0003E3760 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
