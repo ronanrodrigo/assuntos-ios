@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ux-1u-oT1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SdA-i3-6Z4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Escolha um assunto-->
@@ -20,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EGc-z0-vD7" kind="show" id="eyI-RZ-Hwk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -27,18 +31,106 @@
                             <outlet property="delegate" destination="BMu-Rn-id6" id="rcv-wx-Rmv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Escolha um assunto" id="ZkH-RE-Xr8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WVz-ab-Csa"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Escolha um assunto" id="ZkH-RE-Xr8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNm-eM-eLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="387"/>
+            <point key="canvasLocation" x="2980" y="645"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Suggestion Table View Controller-->
+        <scene sceneID="Hg2-8M-okg">
+            <objects>
+                <tableViewController id="EGc-z0-vD7" customClass="SuggestionTableViewController" customModule="Assuntos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="CNq-IL-ViE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Título" id="XY0-JT-0Om">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="jd1-G0-y7S">
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jd1-G0-y7S" id="UOv-Fh-ce4">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="91i-bA-9Ft">
+                                                    <rect key="frame" x="8" y="8" width="584" height="73.5"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="91i-bA-9Ft" firstAttribute="top" secondItem="UOv-Fh-ce4" secondAttribute="topMargin" id="9X8-kb-alR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="91i-bA-9Ft" secondAttribute="bottom" id="cYq-bh-lKn"/>
+                                                <constraint firstItem="91i-bA-9Ft" firstAttribute="leading" secondItem="UOv-Fh-ce4" secondAttribute="leadingMargin" id="cyk-nW-s2V"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="91i-bA-9Ft" secondAttribute="trailing" id="k5C-gF-KWR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Descrição" id="ApZ-TD-y0t">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="wnX-xA-zUc">
+                                        <rect key="frame" x="0.0" y="253.5" width="600" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wnX-xA-zUc" id="WaI-7G-PYC">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DOs-Hq-VtW">
+                                                    <rect key="frame" x="8" y="8" width="584" height="153.5"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DOs-Hq-VtW" firstAttribute="top" secondItem="WaI-7G-PYC" secondAttribute="topMargin" id="81E-rn-CZz"/>
+                                                <constraint firstItem="DOs-Hq-VtW" firstAttribute="leading" secondItem="WaI-7G-PYC" secondAttribute="leadingMargin" id="gSn-6T-jtS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DOs-Hq-VtW" secondAttribute="trailing" id="uHC-tC-0nP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DOs-Hq-VtW" secondAttribute="bottom" id="wB0-yl-Q53"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="EGc-z0-vD7" id="vbH-ZW-8tS"/>
+                            <outlet property="delegate" destination="EGc-z0-vD7" id="QWW-pg-kgc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G62-kF-Ewb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3775" y="645"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2fA-3N-59e">
+            <objects>
+                <tabBarController id="SdA-i3-6Z4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="AtJ-JT-RKm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2ux-1u-oT1" kind="relationship" relationship="viewControllers" id="GGW-wa-HnX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6a-ya-llU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="1093"/>
+        </scene>
+        <!--Assuntos-->
         <scene sceneID="oV1-Z4-bKk">
             <objects>
                 <navigationController id="2ux-1u-oT1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assuntos" id="sgv-iK-h1l"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X3n-uX-NCJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +141,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36m-bz-NGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="387"/>
+            <point key="canvasLocation" x="2194" y="645"/>
         </scene>
     </scenes>
 </document>
