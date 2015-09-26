@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ux-1u-oT1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Escolha um assunto-->
@@ -27,11 +28,81 @@
                             <outlet property="delegate" destination="BMu-Rn-id6" id="rcv-wx-Rmv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Escolha um assunto" id="ZkH-RE-Xr8"/>
+                    <navigationItem key="navigationItem" title="Escolha um assunto" id="ZkH-RE-Xr8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WVz-ab-Csa">
+                            <connections>
+                                <segue destination="TEH-ET-dQo" kind="show" identifier="addSubject" id="o6f-o9-V5y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNm-eM-eLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1980" y="387"/>
+        </scene>
+        <!--Subject Form Table View Controller-->
+        <scene sceneID="oaT-79-gea">
+            <objects>
+                <tableViewController id="TEH-ET-dQo" customClass="SubjectFormTableViewController" customModule="Assuntos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="OZV-8x-Ze6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="3qi-eK-46W">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="P1C-m2-nmH">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P1C-m2-nmH" id="V90-Wc-yJE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAt-k0-219">
+                                                    <rect key="frame" x="7.5" y="12" width="43.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXg-Lf-ht6">
+                                                    <rect key="frame" x="61" y="0.0" width="531" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="dXg-Lf-ht6" secondAttribute="bottom" id="HaJ-EN-Rrv"/>
+                                                <constraint firstItem="sAt-k0-219" firstAttribute="centerY" secondItem="V90-Wc-yJE" secondAttribute="centerY" id="KKe-nn-MAv"/>
+                                                <constraint firstItem="dXg-Lf-ht6" firstAttribute="top" secondItem="V90-Wc-yJE" secondAttribute="top" id="MCE-IO-sPv"/>
+                                                <constraint firstItem="dXg-Lf-ht6" firstAttribute="leading" secondItem="sAt-k0-219" secondAttribute="trailing" constant="10" id="O3H-IB-fUa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dXg-Lf-ht6" secondAttribute="trailing" id="pRV-lK-pun"/>
+                                                <constraint firstItem="sAt-k0-219" firstAttribute="leading" secondItem="V90-Wc-yJE" secondAttribute="leadingMargin" id="s4c-i6-apG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="TEH-ET-dQo" id="Qjx-G3-9Ey"/>
+                            <outlet property="delegate" destination="TEH-ET-dQo" id="I2l-nV-qdB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="t1U-RK-mZg">
+                        <barButtonItem key="backBarButtonItem" title="Cancelar" id="igy-gt-vxz"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Cpv-JS-ROT">
+                            <connections>
+                                <action selector="SaveSubject:" destination="TEH-ET-dQo" id="zSg-rY-Cu9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="subjectTitle" destination="dXg-Lf-ht6" id="OPq-NE-EPO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5P-WV-fCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2727" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oV1-Z4-bKk">

@@ -14,8 +14,12 @@ class SubjectTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         subjects = GetSubjecstListUsecase(gateway: gateway).run()
-        
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        subjects = GetSubjecstListUsecase(gateway: gateway).run()
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,14 +79,15 @@ class SubjectTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "addSubject"){
+            let destinationViewController = segue.destinationViewController as! SubjectFormTableViewController
+            destinationViewController.usecase = AddSubjectUsecase(gateway: self.gateway)
+        }
     }
-    */
 
 }
