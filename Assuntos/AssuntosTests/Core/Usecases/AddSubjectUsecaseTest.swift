@@ -22,8 +22,17 @@ class AddSubjectUsecaseTest: XCTestCase {
         let subject = Subject(title: "Assunto aleatorio")
         
         self.usecase.run(subject)
-        let savedSubject = self.gateway.subject
+        let expectedSubject = self.gateway.subject
         
-        XCTAssertEqual(savedSubject!.title, subject.title, "Titles aren't equal")
+        XCTAssertEqual(expectedSubject.title, subject.title, "Titles aren't equal")
+    }
+    
+    func testShouldNetAddNewSubjectWithoutTitle() {
+        let subject = Subject()
+        
+        self.usecase.run(subject)
+        let subjects = self.gateway.subjects
+        
+        XCTAssertEqual(subjects.count, 0, "Subject was save")
     }
 }

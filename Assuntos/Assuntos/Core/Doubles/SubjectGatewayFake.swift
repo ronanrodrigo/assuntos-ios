@@ -10,15 +10,16 @@ import Foundation
 
 class SubjectGatewayFake: SubjectGateway {
     var subjects: [Subject]
-    var subject: Subject?
+    var subject: Subject
 
     init(){
         self.subjects = []
+        self.subject = Subject()
     }
     
     func addSubject(subject: Subject) {
         self.subject = subject
-        self.subjects.append(self.subject!)
+        self.subjects.append(self.subject)
     }
     
     func getSubjects() -> [Subject] {

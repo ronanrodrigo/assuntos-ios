@@ -9,9 +9,12 @@
 import Foundation
 
 class Subject {
-    var title: String
+    var title: String?
+    
+    init() { }
     
     init(title: String) {
         self.title = title
     }
+
 }

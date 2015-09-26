@@ -14,6 +14,8 @@ class AddSubjectUsecase {
     }
     
     func run(subject: Subject) {
-        self.gateway.addSubject(subject)
+        if(subject.title != nil){
+            self.gateway.addSubject(subject)
+        }
     }
 }
