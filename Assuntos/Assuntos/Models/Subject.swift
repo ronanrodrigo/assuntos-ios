@@ -6,15 +6,19 @@
 //  Copyright © 2015 Ronan Rodrigo Nunes. All rights reserved.
 //
 
-import Foundation
-
 class Subject {
     var title: String?
+    var suggestions: [Suggestion]?
     
     init() { }
     
     init(title: String) {
         self.title = title
+    }
+    
+    init(title: String, suggestions: [Suggestion]) {
+        self.title = title
+        self.suggestions = suggestions
     }
 
 }

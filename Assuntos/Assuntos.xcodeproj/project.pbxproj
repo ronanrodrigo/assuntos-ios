@@ -20,6 +20,7 @@
 		344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B21BB66E27003E3760 /* SubjectGateway.swift */; settings = {ASSET_TAGS = (); }; };
 		344769B71BB67094003E3760 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B61BB67094003E3760 /* Subject.swift */; settings = {ASSET_TAGS = (); }; };
 		3448CB051BB6F8C6004660CD /* SuggestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB041BB6F8C6004660CD /* SuggestionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3448CB071BB6F8F2004660CD /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448CB061BB6F8F2004660CD /* Suggestion.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		344769B21BB66E27003E3760 /* SubjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGateway.swift; sourceTree = "<group>"; };
 		344769B61BB67094003E3760 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		3448CB041BB6F8C6004660CD /* SuggestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewController.swift; sourceTree = "<group>"; };
+		3448CB061BB6F8F2004660CD /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecaseTest.swift; sourceTree = "<group>"; };
 		34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				344769B61BB67094003E3760 /* Subject.swift */,
+				3448CB061BB6F8F2004660CD /* Suggestion.swift */,
 			);
 			name = Models;
 			path = Assuntos/Models;
@@ -382,6 +385,7 @@
 				344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */,
 				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
 				34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */,
+				3448CB071BB6F8F2004660CD /* Suggestion.swift in Sources */,
 				3448CB051BB6F8C6004660CD /* SuggestionTableViewController.swift in Sources */,
 				344769B71BB67094003E3760 /* Subject.swift in Sources */,
 				344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */,
