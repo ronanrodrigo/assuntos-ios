@@ -27,7 +27,7 @@ class AddSubjectUsecaseTest: XCTestCase {
         XCTAssertEqual(expectedSubject.title, subject.title, "Titles aren't equal")
     }
     
-    func testShouldNetAddNewSubjectWithoutTitle() {
+    func testShouldNotAddNewSubjectWithoutTitle() {
         let subject = Subject()
         
         self.usecase.run(subject)
