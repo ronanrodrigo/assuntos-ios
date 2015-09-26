@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		344769651BB654C0003E3760 /* Assuntos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assuntos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		344769681BB654C0003E3760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		344769681BB654C0003E3760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Assuntos/AppDelegate.swift; sourceTree = "<group>"; };
 		3447696D1BB654C0003E3760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3447696F1BB654C0003E3760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344769721BB654C0003E3760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				344769671BB654C0003E3760 /* Assuntos */,
+				344769681BB654C0003E3760 /* AppDelegate.swift */,
 				3447697C1BB654C0003E3760 /* AssuntosTests */,
 				344769871BB654C0003E3760 /* AssuntosUITests */,
 				344769661BB654C0003E3760 /* Products */,
@@ -100,10 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				344769991BB6587D003E3760 /* Core */,
+				344769A21BB66200003E3760 /* Gateways */,
+				3447699A1BB65999003E3760 /* SupportingFiles */,
 				344769981BB65877003E3760 /* ViewControllers */,
 				3447699B1BB659EC003E3760 /* Views */,
-				3447699A1BB65999003E3760 /* SupportingFiles */,
-				344769681BB654C0003E3760 /* AppDelegate.swift */,
 			);
 			path = Assuntos;
 			sourceTree = "<group>";
@@ -138,6 +139,9 @@
 		344769991BB6587D003E3760 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				344769A11BB661E5003E3760 /* Interfaces */,
+				344769A31BB66215003E3760 /* Tests */,
+				344769A01BB661D4003E3760 /* Usecases */,
 			);
 			name = Core;
 			path = Assuntos/Core;
@@ -160,6 +164,38 @@
 			);
 			name = Views;
 			sourceTree = "<group>";
+		};
+		344769A01BB661D4003E3760 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Usecases;
+			path = Assuntos/Core/Usecases;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769A11BB661E5003E3760 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interfaces;
+			path = Assuntos/Core/Interfaces;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769A21BB66200003E3760 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gateways;
+			path = Assuntos/Core/Gateways;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769A31BB66215003E3760 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			path = Assuntos/Core/Tests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
