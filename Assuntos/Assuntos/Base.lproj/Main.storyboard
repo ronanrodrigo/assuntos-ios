@@ -7,7 +7,7 @@
         <!--Escolha um assunto-->
         <scene sceneID="Bjs-PF-rFE">
             <objects>
-                <tableViewController id="BMu-Rn-id6" sceneMemberID="viewController">
+                <tableViewController id="BMu-Rn-id6" customClass="SubjectTableViewController" customModule="Assuntos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9fi-h0-RG3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
