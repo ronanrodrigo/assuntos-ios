@@ -17,10 +17,11 @@ class SuggestionTableViewController: UITableViewController {
     
     // MARK: - Properties
     var suggestion: Suggestion!
+    var subject: Subject!
+    let gateway = SubjectGateway()
 
     override func viewDidLoad() {
-        suggestionTitle.text = suggestion.title
-        suggestionDescription.text = suggestion.description
+        updateInterface(self.suggestion)
         
         super.viewDidLoad()
     }
@@ -40,5 +41,18 @@ class SuggestionTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
+    
+    // MARK: - Actions
 
+    @IBAction func getOtherSuggestion(sender: AnyObject) {
+        let suggestion = GetRandomSuggestionBySubjectUsecase(gateway: self.gateway).run(subject)
+        updateInterface(suggestion)
+    }
+    
+    // MARK: - Other function
+    
+    func updateInterface(suggestion: Suggestion) {
+        suggestionTitle.text = suggestion.title
+        suggestionDescription.text = suggestion.description
+    }
 }

@@ -37,6 +37,23 @@
             </objects>
             <point key="canvasLocation" x="2980" y="645"/>
         </scene>
+        <!--Aleatório-->
+        <scene sceneID="E0s-bc-R4N">
+            <objects>
+                <navigationController id="WGE-gV-Ftt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Aleatório" id="nd9-yB-r0z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YKK-Jh-yYO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EGc-z0-vD7" kind="relationship" relationship="rootViewController" id="Upk-nu-oRD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opd-ut-ehw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="1379"/>
+        </scene>
         <!--Suggestion Table View Controller-->
         <scene sceneID="Hg2-8M-okg">
             <objects>
@@ -102,6 +119,15 @@
                             <outlet property="delegate" destination="EGc-z0-vD7" id="QWW-pg-kgc"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xey-3t-jhh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="rfL-yU-nqF">
+                            <connections>
+                                <action selector="getOtherSuggestion:" destination="EGc-z0-vD7" id="zgO-2g-P9T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="suggestionDescription" destination="DOs-Hq-VtW" id="DW7-Ll-Ubk"/>
                         <outlet property="suggestionTitle" destination="91i-bA-9Ft" id="xxj-GC-byX"/>
@@ -109,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G62-kF-Ewb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3775" y="645"/>
+            <point key="canvasLocation" x="2980" y="1379"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2fA-3N-59e">
@@ -122,6 +148,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="2ux-1u-oT1" kind="relationship" relationship="viewControllers" id="GGW-wa-HnX"/>
+                        <segue destination="WGE-gV-Ftt" kind="relationship" relationship="viewControllers" id="3zL-xF-A3c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6a-ya-llU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,4 +173,7 @@
             <point key="canvasLocation" x="2194" y="645"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Upk-nu-oRD"/>
+    </inferredMetricsTieBreakers>
 </document>

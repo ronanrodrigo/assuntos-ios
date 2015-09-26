@@ -52,6 +52,7 @@ class SubjectTableViewController: UITableViewController {
             let subject = self.subjects[(indexPath?.row)!]
             let suggestion = GetRandomSuggestionBySubjectUsecase(gateway: self.gateway).run(subject)
             destinationViewController.suggestion = suggestion
+            destinationViewController.subject = subject
         }
     }
 
