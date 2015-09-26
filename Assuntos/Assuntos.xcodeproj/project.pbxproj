@@ -14,6 +14,11 @@
 		3447697E1BB654C0003E3760 /* AssuntosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447697D1BB654C0003E3760 /* AssuntosTests.swift */; };
 		344769891BB654C0003E3760 /* AssuntosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769881BB654C0003E3760 /* AssuntosUITests.swift */; };
 		3447699F1BB6615A003E3760 /* SubjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447699E1BB6615A003E3760 /* SubjectTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		344769AD1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769AC1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769AE1BB66CD9003E3760 /* SubjectGatewayFake.swift */; settings = {ASSET_TAGS = (); }; };
+		344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */; settings = {ASSET_TAGS = (); }; };
+		344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B21BB66E27003E3760 /* SubjectGateway.swift */; settings = {ASSET_TAGS = (); }; };
+		344769B71BB67094003E3760 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B61BB67094003E3760 /* Subject.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		3447699C1BB65B4A003E3760 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		3447699D1BB65B4A003E3760 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3447699E1BB6615A003E3760 /* SubjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableViewController.swift; sourceTree = "<group>"; };
+		344769AC1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjectsListUsecaseTest.swift; sourceTree = "<group>"; };
+		344769AE1BB66CD9003E3760 /* SubjectGatewayFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGatewayFake.swift; sourceTree = "<group>"; };
+		344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjecstListUsecase.swift; sourceTree = "<group>"; };
+		344769B21BB66E27003E3760 /* SubjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectGateway.swift; sourceTree = "<group>"; };
+		344769B61BB67094003E3760 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 		344769671BB654C0003E3760 /* Assuntos */ = {
 			isa = PBXGroup;
 			children = (
+				344769B51BB67051003E3760 /* Models */,
 				344769991BB6587D003E3760 /* Core */,
 				344769A21BB66200003E3760 /* Gateways */,
 				3447699A1BB65999003E3760 /* SupportingFiles */,
@@ -141,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				344769AB1BB66B63003E3760 /* Doubles */,
-				344769A11BB661E5003E3760 /* Interfaces */,
+				344769A11BB661E5003E3760 /* Protocols */,
 				344769A01BB661D4003E3760 /* Usecases */,
 			);
 			name = Core;
@@ -169,17 +180,19 @@
 		344769A01BB661D4003E3760 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				344769B01BB66D4A003E3760 /* GetSubjecstListUsecase.swift */,
 			);
 			name = Usecases;
 			path = Assuntos/Core/Usecases;
 			sourceTree = SOURCE_ROOT;
 		};
-		344769A11BB661E5003E3760 /* Interfaces */ = {
+		344769A11BB661E5003E3760 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				344769B21BB66E27003E3760 /* SubjectGateway.swift */,
 			);
-			name = Interfaces;
-			path = Assuntos/Core/Interfaces;
+			name = Protocols;
+			path = Assuntos/Core/Protocols;
 			sourceTree = SOURCE_ROOT;
 		};
 		344769A21BB66200003E3760 /* Gateways */ = {
@@ -202,6 +215,7 @@
 		344769A51BB66310003E3760 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				344769AC1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift */,
 			);
 			name = Usecases;
 			path = AssuntosTests/Core/Usecases;
@@ -210,9 +224,19 @@
 		344769AB1BB66B63003E3760 /* Doubles */ = {
 			isa = PBXGroup;
 			children = (
+				344769AE1BB66CD9003E3760 /* SubjectGatewayFake.swift */,
 			);
 			name = Doubles;
 			path = Assuntos/Core/Doubles;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769B51BB67051003E3760 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				344769B61BB67094003E3760 /* Subject.swift */,
+			);
+			name = Models;
+			path = Assuntos/Models;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -346,6 +370,10 @@
 			files = (
 				3447699F1BB6615A003E3760 /* SubjectTableViewController.swift in Sources */,
 				344769691BB654C0003E3760 /* AppDelegate.swift in Sources */,
+				344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */,
+				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
+				344769B71BB67094003E3760 /* Subject.swift in Sources */,
+				344769B11BB66D4A003E3760 /* GetSubjecstListUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344769AD1BB66BD3003E3760 /* GetSubjectsListUsecaseTest.swift in Sources */,
 				3447697E1BB654C0003E3760 /* AssuntosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
