@@ -21,7 +21,6 @@
 		344769B71BB67094003E3760 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344769B61BB67094003E3760 /* Subject.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21631BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */; settings = {ASSET_TAGS = (); }; };
 		34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */; settings = {ASSET_TAGS = (); }; };
-		34AF21691BB689B0008BC0DF /* SubjectFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF21681BB689B0008BC0DF /* SubjectFormTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		344769B61BB67094003E3760 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		34AF21621BB67B2D008BC0DF /* AddSubjectUsecaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecaseTest.swift; sourceTree = "<group>"; };
 		34AF21641BB67CB7008BC0DF /* AddSubjectUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubjectUsecase.swift; sourceTree = "<group>"; };
-		34AF21681BB689B0008BC0DF /* SubjectFormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectFormTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				3447699E1BB6615A003E3760 /* SubjectTableViewController.swift */,
-				34AF21681BB689B0008BC0DF /* SubjectFormTableViewController.swift */,
 			);
 			name = ViewControllers;
 			path = Assuntos/ViewControllers;
@@ -379,7 +376,6 @@
 			files = (
 				3447699F1BB6615A003E3760 /* SubjectTableViewController.swift in Sources */,
 				344769691BB654C0003E3760 /* AppDelegate.swift in Sources */,
-				34AF21691BB689B0008BC0DF /* SubjectFormTableViewController.swift in Sources */,
 				344769B31BB66E27003E3760 /* SubjectGateway.swift in Sources */,
 				344769AF1BB66CD9003E3760 /* SubjectGatewayFake.swift in Sources */,
 				34AF21651BB67CB7008BC0DF /* AddSubjectUsecase.swift in Sources */,
