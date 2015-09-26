@@ -47,6 +47,8 @@
 		344769841BB654C0003E3760 /* AssuntosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssuntosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344769881BB654C0003E3760 /* AssuntosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssuntosUITests.swift; sourceTree = "<group>"; };
 		3447698A1BB654C0003E3760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3447699C1BB65B4A003E3760 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		3447699D1BB65B4A003E3760 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +244,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 3447695C1BB654C0003E3760;
@@ -330,6 +331,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3447696D1BB654C0003E3760 /* Base */,
+				3447699C1BB65B4A003E3760 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -338,6 +340,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				344769721BB654C0003E3760 /* Base */,
+				3447699D1BB65B4A003E3760 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
