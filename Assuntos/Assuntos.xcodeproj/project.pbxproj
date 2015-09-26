@@ -97,6 +97,8 @@
 		344769671BB654C0003E3760 /* Assuntos */ = {
 			isa = PBXGroup;
 			children = (
+				344769991BB6587D003E3760 /* Core */,
+				344769981BB65877003E3760 /* Controllers */,
 				344769681BB654C0003E3760 /* AppDelegate.swift */,
 				3447696A1BB654C0003E3760 /* ViewController.swift */,
 				3447696C1BB654C0003E3760 /* Main.storyboard */,
@@ -124,6 +126,22 @@
 			);
 			path = AssuntosUITests;
 			sourceTree = "<group>";
+		};
+		344769981BB65877003E3760 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			path = Assuntos/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769991BB6587D003E3760 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			path = Assuntos/Core;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -481,6 +499,7 @@
 				3447698F1BB654C0003E3760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		344769901BB654C0003E3760 /* Build configuration list for PBXNativeTarget "AssuntosTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +508,7 @@
 				344769921BB654C0003E3760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		344769931BB654C0003E3760 /* Build configuration list for PBXNativeTarget "AssuntosUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +517,7 @@
 				344769951BB654C0003E3760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
