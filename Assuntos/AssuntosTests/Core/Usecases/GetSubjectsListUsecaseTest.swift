@@ -11,7 +11,7 @@ import XCTest
 
 class GetSubjectsListUsecaseTest: XCTestCase {
     let gateway = SubjectGatewayFake()
-    var usecase: GetSubjecstListUsecase?
+    var usecase: GetSubjecstListUsecase!
     
     override func setUp() {
         super.setUp()
@@ -22,7 +22,7 @@ class GetSubjectsListUsecaseTest: XCTestCase {
         let subject = Subject(title: "Assunto aleatorio")
         self.gateway.addSubject(subject)
         
-        let subjects = self.usecase!.run()
+        let subjects = self.usecase.run()
         
         XCTAssertEqual(subjects[0].title, subject.title)
     }
