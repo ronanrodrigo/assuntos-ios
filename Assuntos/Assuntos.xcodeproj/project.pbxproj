@@ -112,6 +112,7 @@
 		3447697C1BB654C0003E3760 /* AssuntosTests */ = {
 			isa = PBXGroup;
 			children = (
+				344769A41BB662F7003E3760 /* Core */,
 				3447697D1BB654C0003E3760 /* AssuntosTests.swift */,
 				3447697F1BB654C0003E3760 /* Info.plist */,
 			);
@@ -140,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				344769A11BB661E5003E3760 /* Interfaces */,
-				344769A31BB66215003E3760 /* Tests */,
 				344769A01BB661D4003E3760 /* Usecases */,
 			);
 			name = Core;
@@ -189,12 +189,30 @@
 			path = Assuntos/Core/Gateways;
 			sourceTree = SOURCE_ROOT;
 		};
-		344769A31BB66215003E3760 /* Tests */ = {
+		344769A41BB662F7003E3760 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				344769A61BB6631B003E3760 /* Doubles */,
+				344769A51BB66310003E3760 /* Usecases */,
+			);
+			name = Core;
+			path = AssuntosTests/Core;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769A51BB66310003E3760 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Tests;
-			path = Assuntos/Core/Tests;
+			name = Usecases;
+			path = AssuntosTests/Core/Usecases;
+			sourceTree = SOURCE_ROOT;
+		};
+		344769A61BB6631B003E3760 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Doubles;
+			path = AssuntosTests/Core/Doubles;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
