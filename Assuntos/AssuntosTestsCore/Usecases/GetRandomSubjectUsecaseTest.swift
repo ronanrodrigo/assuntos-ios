@@ -25,9 +25,8 @@ class GetRandomSuggestionUsecaseTest: XCTestCase {
         let lastSuggestion = Suggestion(
             title: "Viagem no tempo",
             description: "Viagem no tempo se refere ao conceito de mover-se para trás e/ou para frente através de pontos diferentes no tempo em um modo análogo à mobilidade pelo espaço.")
-        let subject = SubjectGatewayFake().addSubject(Subject(title: "Ficção científica"))
-        gateway.addSuggestion(firstSuggestion, subject: subject)
-        gateway.addSuggestion(lastSuggestion, subject: subject)
+        gateway.addSuggestion(firstSuggestion, subject: Subject(title: "Ficção científica"))
+        gateway.addSuggestion(lastSuggestion, subject: Subject(title: "Ficção científica"))
         
         let suggestion = self.usecase.run()
         
